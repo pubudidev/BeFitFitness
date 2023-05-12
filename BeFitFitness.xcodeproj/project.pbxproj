@@ -69,6 +69,7 @@
 				56802BA22A0EA39A00B78D27 /* Resources */,
 				56802BA12A0EA27E00B78D27 /* Application */,
 				563AAB312A0C11F2000C5E5D /* Info.plist */,
+				563AAB2C2A0C11F2000C5E5D /* Assets.xcassets */,
 				563AAB292A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld */,
 			);
 			path = BeFitFitness;
@@ -86,7 +87,6 @@
 		56802BA22A0EA39A00B78D27 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				563AAB2C2A0C11F2000C5E5D /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
