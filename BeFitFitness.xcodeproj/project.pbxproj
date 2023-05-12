@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		563AAB212A0C11F1000C5E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AAB202A0C11F1000C5E5D /* AppDelegate.swift */; };
 		563AAB232A0C11F1000C5E5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AAB222A0C11F1000C5E5D /* SceneDelegate.swift */; };
 		563AAB252A0C11F1000C5E5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AAB242A0C11F1000C5E5D /* ViewController.swift */; };
-		563AAB282A0C11F1000C5E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563AAB262A0C11F1000C5E5D /* Main.storyboard */; };
 		563AAB2B2A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 563AAB292A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld */; };
 		563AAB2D2A0C11F2000C5E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563AAB2C2A0C11F2000C5E5D /* Assets.xcassets */; };
 		563AAB302A0C11F2000C5E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563AAB2E2A0C11F2000C5E5D /* LaunchScreen.storyboard */; };
@@ -21,7 +20,6 @@
 		563AAB202A0C11F1000C5E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		563AAB222A0C11F1000C5E5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		563AAB242A0C11F1000C5E5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		563AAB272A0C11F1000C5E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		563AAB2A2A0C11F1000C5E5D /* BeFitFitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeFitFitness.xcdatamodel; sourceTree = "<group>"; };
 		563AAB2C2A0C11F2000C5E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		563AAB2F2A0C11F2000C5E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 				563AAB202A0C11F1000C5E5D /* AppDelegate.swift */,
 				563AAB222A0C11F1000C5E5D /* SceneDelegate.swift */,
 				563AAB242A0C11F1000C5E5D /* ViewController.swift */,
-				563AAB262A0C11F1000C5E5D /* Main.storyboard */,
 				563AAB2C2A0C11F2000C5E5D /* Assets.xcassets */,
 				563AAB2E2A0C11F2000C5E5D /* LaunchScreen.storyboard */,
 				563AAB312A0C11F2000C5E5D /* Info.plist */,
@@ -105,7 +102,7 @@
 				};
 			};
 			buildConfigurationList = 563AAB182A0C11F0000C5E5D /* Build configuration list for PBXProject "BeFitFitness" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -129,7 +126,6 @@
 			files = (
 				563AAB302A0C11F2000C5E5D /* LaunchScreen.storyboard in Resources */,
 				563AAB2D2A0C11F2000C5E5D /* Assets.xcassets in Resources */,
-				563AAB282A0C11F1000C5E5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,14 +146,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		563AAB262A0C11F1000C5E5D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				563AAB272A0C11F1000C5E5D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		563AAB2E2A0C11F2000C5E5D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
