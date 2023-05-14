@@ -13,6 +13,7 @@
 		563AAB2B2A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 563AAB292A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld */; };
 		563AAB2D2A0C11F2000C5E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563AAB2C2A0C11F2000C5E5D /* Assets.xcassets */; };
 		563AAB302A0C11F2000C5E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563AAB2E2A0C11F2000C5E5D /* LaunchScreen.storyboard */; };
+		56445EC02A11359700FC63F4 /* AuthenticationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56445EBF2A11359700FC63F4 /* AuthenticationHeaderView.swift */; };
 		56802BA72A0EA78D00B78D27 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BA62A0EA78D00B78D27 /* ForgotPasswordViewController.swift */; };
 		56802BA92A0EA7E500B78D27 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BA82A0EA7E500B78D27 /* HomeViewController.swift */; };
 		56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BAA2A0EA81700B78D27 /* LoginViewController.swift */; };
@@ -28,6 +29,7 @@
 		563AAB2C2A0C11F2000C5E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		563AAB2F2A0C11F2000C5E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563AAB312A0C11F2000C5E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56445EBF2A11359700FC63F4 /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
 		56802BA62A0EA78D00B78D27 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		56802BA82A0EA7E500B78D27 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		56802BAA2A0EA81700B78D27 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		563AAB1F2A0C11F1000C5E5D /* BeFitFitness */ = {
 			isa = PBXGroup;
 			children = (
+				56445EBE2A11354800FC63F4 /* Views */,
 				56802BA42A0EA40500B78D27 /* Controllers */,
 				56802BA32A0EA3DC00B78D27 /* StoryBoard */,
 				56802BA22A0EA39A00B78D27 /* Resources */,
@@ -73,6 +76,14 @@
 				563AAB292A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld */,
 			);
 			path = BeFitFitness;
+			sourceTree = "<group>";
+		};
+		56445EBE2A11354800FC63F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56445EBF2A11359700FC63F4 /* AuthenticationHeaderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		56802BA12A0EA27E00B78D27 /* Application */ = {
@@ -193,6 +204,7 @@
 				56802BA72A0EA78D00B78D27 /* ForgotPasswordViewController.swift in Sources */,
 				56802BAD2A0EA84E00B78D27 /* RegisterViewController.swift in Sources */,
 				563AAB212A0C11F1000C5E5D /* AppDelegate.swift in Sources */,
+				56445EC02A11359700FC63F4 /* AuthenticationHeaderView.swift in Sources */,
 				563AAB232A0C11F1000C5E5D /* SceneDelegate.swift in Sources */,
 				563AAB2B2A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld in Sources */,
 				56802BA92A0EA7E500B78D27 /* HomeViewController.swift in Sources */,
