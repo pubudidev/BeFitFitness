@@ -23,18 +23,30 @@
                                     <constraint firstAttribute="width" constant="240" id="YO5-z9-U2f"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be Fit Fitness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVw-nv-UD0">
+                                <rect key="frame" x="101.5" y="627.5" width="211" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="7Xo-u8-T1R"/>
+                                    <constraint firstAttribute="width" constant="211" id="tSz-K4-WHr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QQI-ad-pIO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Cgg-T7-Yhv"/>
                             <constraint firstItem="QQI-ad-pIO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="UgW-jz-Ty1"/>
+                            <constraint firstItem="VVw-nv-UD0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZdU-ZO-sX8"/>
+                            <constraint firstItem="VVw-nv-UD0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="200" id="nzH-G6-sa9"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
