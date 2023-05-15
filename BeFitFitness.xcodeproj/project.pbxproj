@@ -15,6 +15,7 @@
 		563AAB302A0C11F2000C5E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563AAB2E2A0C11F2000C5E5D /* LaunchScreen.storyboard */; };
 		5641EB302A12888C002188AB /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641EB2F2A12888C002188AB /* FontSize.swift */; };
 		5641EB322A1296BF002188AB /* WebViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641EB312A1296BF002188AB /* WebViewerController.swift */; };
+		5641EB352A12A036002188AB /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641EB342A12A036002188AB /* AlertManager.swift */; };
 		56445EC02A11359700FC63F4 /* AuthenticationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56445EBF2A11359700FC63F4 /* AuthenticationHeaderView.swift */; };
 		56445EC22A11497900FC63F4 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56445EC12A11497900FC63F4 /* PrimaryTextField.swift */; };
 		56445EC52A114B0900FC63F4 /* CustomTextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56445EC42A114B0900FC63F4 /* CustomTextFieldType.swift */; };
@@ -36,6 +37,7 @@
 		563AAB312A0C11F2000C5E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5641EB2F2A12888C002188AB /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 		5641EB312A1296BF002188AB /* WebViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewerController.swift; sourceTree = "<group>"; };
+		5641EB342A12A036002188AB /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		56445EBF2A11359700FC63F4 /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
 		56445EC12A11497900FC63F4 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		56445EC42A114B0900FC63F4 /* CustomTextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldType.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		563AAB1F2A0C11F1000C5E5D /* BeFitFitness */ = {
 			isa = PBXGroup;
 			children = (
+				5641EB332A129FEC002188AB /* Managers */,
 				56445EC32A114AA400FC63F4 /* Enumarators */,
 				56445EBE2A11354800FC63F4 /* Views */,
 				56802BA42A0EA40500B78D27 /* Controllers */,
@@ -87,6 +90,14 @@
 				563AAB292A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld */,
 			);
 			path = BeFitFitness;
+			sourceTree = "<group>";
+		};
+		5641EB332A129FEC002188AB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5641EB342A12A036002188AB /* AlertManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		56445EBE2A11354800FC63F4 /* Views */ = {
@@ -224,6 +235,7 @@
 			files = (
 				5641EB302A12888C002188AB /* FontSize.swift in Sources */,
 				56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */,
+				5641EB352A12A036002188AB /* AlertManager.swift in Sources */,
 				5641EB322A1296BF002188AB /* WebViewerController.swift in Sources */,
 				563AAB252A0C11F1000C5E5D /* ViewController.swift in Sources */,
 				56802BA72A0EA78D00B78D27 /* ForgotPasswordViewController.swift in Sources */,
