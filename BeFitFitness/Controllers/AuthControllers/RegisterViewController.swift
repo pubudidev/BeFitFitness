@@ -19,12 +19,23 @@ class RegisterViewController: UIViewController {
     private let signInButton = PrimaryButton(title: "Alredy have an account? Sign In.", fontSize: .med)
     
     private let termTextView: UITextView = {
+        let attributedString = NSMutableAttributedString(string: "By creating an account, you agree to our Terms & Conditions and you acknowledge that you have read our Privacy Policy.")
+        
+        attributedString.addAttribute(.link, value: "terms://termsAndConditions", range: (attributedString.string as NSString).range(of: "Terms & Conditions"))
+        
+        attributedString.addAttribute(.link, value: "privacy://privacyPolicy", range: (attributedString.string as NSString).range(of: "Privacy Policy"))
         let textView = UITextView()
-        textView.text = "By creating an  account you agree with our terms and conditions"
+        
+        attributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 12), range: (attributedString.string as NSString).range(of: "By creating an account, you agree to our Terms & Conditions and you acknowledge that you have read our Privacy Policy."))
+        
+        // set the link colors. this takes the NSMutableAttributedString values as Dictionary and apply colors
+        textView.linkTextAttributes = [.foregroundColor: UIColor.systemBlue]
         textView.backgroundColor = .clear
         textView.textColor = .label
+        textView.attributedText = attributedString
         textView.isSelectable = true
         textView.isEditable = false
+        textView.delaysContentTouches = false
         textView.isScrollEnabled = false
         return textView
     }()
@@ -35,6 +46,7 @@ class RegisterViewController: UIViewController {
         
         self.setUpUI()
         
+        self.termTextView.delegate = self
         
         self.signUpButton.addTarget(self, action: #selector(didTapSignUp), for: .touchUpInside)
         self.signInButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
@@ -111,5 +123,30 @@ class RegisterViewController: UIViewController {
             self.signInButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier:  0.85),
             
         ])
+    }
+}
+extension RegisterViewController: UITextViewDelegate {
+    
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        
+        if URL.scheme == "terms" {
+            self.showWebViewerController(with: "https://policies.google.com/terms?hl=en")
+        } else if URL.scheme == "privacy" {
+            self.showWebViewerController(with: "https://policies.google.com/privacy?hl=en")
+        }
+        
+        return true
+    }
+    
+    private func showWebViewerController(with urlString: String) {
+        let vc = WebViewerController(with: urlString)
+        let nav = UINavigationController(rootViewController: vc)
+        self.present(nav, animated: true, completion: nil)
+    }
+    
+    func textViewDidChangeSelection(_ textView: UITextView) {
+        textView.delegate = nil
+        textView.selectedTextRange = nil
+        textView.delegate = self
     }
 }

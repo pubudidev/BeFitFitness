@@ -14,6 +14,7 @@
 		563AAB2D2A0C11F2000C5E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563AAB2C2A0C11F2000C5E5D /* Assets.xcassets */; };
 		563AAB302A0C11F2000C5E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563AAB2E2A0C11F2000C5E5D /* LaunchScreen.storyboard */; };
 		5641EB302A12888C002188AB /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641EB2F2A12888C002188AB /* FontSize.swift */; };
+		5641EB322A1296BF002188AB /* WebViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641EB312A1296BF002188AB /* WebViewerController.swift */; };
 		56445EC02A11359700FC63F4 /* AuthenticationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56445EBF2A11359700FC63F4 /* AuthenticationHeaderView.swift */; };
 		56445EC22A11497900FC63F4 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56445EC12A11497900FC63F4 /* PrimaryTextField.swift */; };
 		56445EC52A114B0900FC63F4 /* CustomTextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56445EC42A114B0900FC63F4 /* CustomTextFieldType.swift */; };
@@ -34,6 +35,7 @@
 		563AAB2F2A0C11F2000C5E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563AAB312A0C11F2000C5E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5641EB2F2A12888C002188AB /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
+		5641EB312A1296BF002188AB /* WebViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewerController.swift; sourceTree = "<group>"; };
 		56445EBF2A11359700FC63F4 /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
 		56445EC12A11497900FC63F4 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		56445EC42A114B0900FC63F4 /* CustomTextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldType.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				56802BA52A0EA73000B78D27 /* AuthControllers */,
 				563AAB242A0C11F1000C5E5D /* ViewController.swift */,
+				5641EB312A1296BF002188AB /* WebViewerController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			files = (
 				5641EB302A12888C002188AB /* FontSize.swift in Sources */,
 				56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */,
+				5641EB322A1296BF002188AB /* WebViewerController.swift in Sources */,
 				563AAB252A0C11F1000C5E5D /* ViewController.swift in Sources */,
 				56802BA72A0EA78D00B78D27 /* ForgotPasswordViewController.swift in Sources */,
 				56802BAD2A0EA84E00B78D27 /* RegisterViewController.swift in Sources */,
