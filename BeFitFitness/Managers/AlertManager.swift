@@ -71,3 +71,18 @@ extension AlertManager {
         self.showBasicAlert(on: vc, title: "Unknown Error Fetching User", message: nil)
     }
 }
+
+extension AlertManager {
+
+     public static func showInvalidEmailAlert(on vc: UIViewController) {
+         self.showBasicAlert(on: vc, title: "Invalid Email", message: "Please enter a valid email.")
+     }
+
+     public static func showInvalidPasswordAlert(on vc: UIViewController) {
+         self.showBasicAlert(on: vc, title: "Invalid Password", message: "Please enter a valid password.")
+     }
+
+     public static func showInvalidUsernameAlert(on vc: UIViewController) {
+         self.showBasicAlert(on: vc, title: "Invalid Username", message: "Please enter a valid username.")
+     }
+ }
