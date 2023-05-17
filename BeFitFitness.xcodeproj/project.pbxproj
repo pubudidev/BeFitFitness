@@ -20,6 +20,14 @@
 		56445EC22A11497900FC63F4 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56445EC12A11497900FC63F4 /* PrimaryTextField.swift */; };
 		56445EC52A114B0900FC63F4 /* CustomTextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56445EC42A114B0900FC63F4 /* CustomTextFieldType.swift */; };
 		56445EC72A114FB900FC63F4 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56445EC62A114FB900FC63F4 /* PrimaryButton.swift */; };
+		564C6BF72A15358B00FD7F6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 564C6BF62A15358B00FD7F6C /* GoogleService-Info.plist */; };
+		564C6BFA2A153C5700FD7F6C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 564C6BF92A153C5700FD7F6C /* FirebaseAuth */; };
+		564C6BFC2A153C5700FD7F6C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 564C6BFB2A153C5700FD7F6C /* FirebaseFirestore */; };
+		564C6BFE2A153C5700FD7F6C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 564C6BFD2A153C5700FD7F6C /* FirebaseStorage */; };
+		564C6C012A15433700FD7F6C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 564C6C002A15433700FD7F6C /* SDWebImage */; };
+		564C6C032A15433700FD7F6C /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 564C6C022A15433700FD7F6C /* SDWebImageMapKit */; };
+		564C6C062A154B5100FD7F6C /* AuthAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564C6C052A154B5100FD7F6C /* AuthAPIService.swift */; };
+		564C6C092A154C5000FD7F6C /* RegiserUserAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564C6C082A154C5000FD7F6C /* RegiserUserAPIRequest.swift */; };
 		56802BA72A0EA78D00B78D27 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BA62A0EA78D00B78D27 /* ForgotPasswordViewController.swift */; };
 		56802BA92A0EA7E500B78D27 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BA82A0EA7E500B78D27 /* HomeViewController.swift */; };
 		56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BAA2A0EA81700B78D27 /* LoginViewController.swift */; };
@@ -42,6 +50,9 @@
 		56445EC12A11497900FC63F4 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		56445EC42A114B0900FC63F4 /* CustomTextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldType.swift; sourceTree = "<group>"; };
 		56445EC62A114FB900FC63F4 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		564C6BF62A15358B00FD7F6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		564C6C052A154B5100FD7F6C /* AuthAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIService.swift; sourceTree = "<group>"; };
+		564C6C082A154C5000FD7F6C /* RegiserUserAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiserUserAPIRequest.swift; sourceTree = "<group>"; };
 		56802BA62A0EA78D00B78D27 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		56802BA82A0EA7E500B78D27 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		56802BAA2A0EA81700B78D27 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +64,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564C6BFA2A153C5700FD7F6C /* FirebaseAuth in Frameworks */,
+				564C6C032A15433700FD7F6C /* SDWebImageMapKit in Frameworks */,
+				564C6BFC2A153C5700FD7F6C /* FirebaseFirestore in Frameworks */,
+				564C6C012A15433700FD7F6C /* SDWebImage in Frameworks */,
+				564C6BFE2A153C5700FD7F6C /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,8 @@
 		563AAB1F2A0C11F1000C5E5D /* BeFitFitness */ = {
 			isa = PBXGroup;
 			children = (
+				564C6C072A154C1C00FD7F6C /* Model */,
+				564C6C042A154B1900FD7F6C /* Services */,
 				5641EB332A129FEC002188AB /* Managers */,
 				56445EC32A114AA400FC63F4 /* Enumarators */,
 				56445EBE2A11354800FC63F4 /* Views */,
@@ -86,6 +104,7 @@
 				56802BA22A0EA39A00B78D27 /* Resources */,
 				56802BA12A0EA27E00B78D27 /* Application */,
 				563AAB312A0C11F2000C5E5D /* Info.plist */,
+				564C6BF62A15358B00FD7F6C /* GoogleService-Info.plist */,
 				563AAB2C2A0C11F2000C5E5D /* Assets.xcassets */,
 				563AAB292A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld */,
 			);
@@ -117,6 +136,22 @@
 				5641EB2F2A12888C002188AB /* FontSize.swift */,
 			);
 			path = Enumarators;
+			sourceTree = "<group>";
+		};
+		564C6C042A154B1900FD7F6C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				564C6C052A154B5100FD7F6C /* AuthAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		564C6C072A154C1C00FD7F6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				564C6C082A154C5000FD7F6C /* RegiserUserAPIRequest.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		56802BA12A0EA27E00B78D27 /* Application */ = {
@@ -180,6 +215,13 @@
 			dependencies = (
 			);
 			name = BeFitFitness;
+			packageProductDependencies = (
+				564C6BF92A153C5700FD7F6C /* FirebaseAuth */,
+				564C6BFB2A153C5700FD7F6C /* FirebaseFirestore */,
+				564C6BFD2A153C5700FD7F6C /* FirebaseStorage */,
+				564C6C002A15433700FD7F6C /* SDWebImage */,
+				564C6C022A15433700FD7F6C /* SDWebImageMapKit */,
+			);
 			productName = BeFitFitness;
 			productReference = 563AAB1D2A0C11F1000C5E5D /* BeFitFitness.app */;
 			productType = "com.apple.product-type.application";
@@ -207,6 +249,10 @@
 				Base,
 			);
 			mainGroup = 563AAB142A0C11F0000C5E5D;
+			packageReferences = (
+				564C6BF82A153C5700FD7F6C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				564C6BFF2A15433700FD7F6C /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 563AAB1E2A0C11F1000C5E5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,6 +269,7 @@
 			files = (
 				563AAB302A0C11F2000C5E5D /* LaunchScreen.storyboard in Resources */,
 				563AAB2D2A0C11F2000C5E5D /* Assets.xcassets in Resources */,
+				564C6BF72A15358B00FD7F6C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +283,7 @@
 				5641EB302A12888C002188AB /* FontSize.swift in Sources */,
 				56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */,
 				5641EB352A12A036002188AB /* AlertManager.swift in Sources */,
+				564C6C092A154C5000FD7F6C /* RegiserUserAPIRequest.swift in Sources */,
 				5641EB322A1296BF002188AB /* WebViewerController.swift in Sources */,
 				563AAB252A0C11F1000C5E5D /* ViewController.swift in Sources */,
 				56802BA72A0EA78D00B78D27 /* ForgotPasswordViewController.swift in Sources */,
@@ -245,6 +293,7 @@
 				56445EC72A114FB900FC63F4 /* PrimaryButton.swift in Sources */,
 				56445EC02A11359700FC63F4 /* AuthenticationHeaderView.swift in Sources */,
 				563AAB232A0C11F1000C5E5D /* SceneDelegate.swift in Sources */,
+				564C6C062A154B5100FD7F6C /* AuthAPIService.swift in Sources */,
 				563AAB2B2A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld in Sources */,
 				56445EC52A114B0900FC63F4 /* CustomTextFieldType.swift in Sources */,
 				56802BA92A0EA7E500B78D27 /* HomeViewController.swift in Sources */,
@@ -439,6 +488,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		564C6BF82A153C5700FD7F6C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 8.15.0;
+			};
+		};
+		564C6BFF2A15433700FD7F6C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.12.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		564C6BF92A153C5700FD7F6C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 564C6BF82A153C5700FD7F6C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		564C6BFB2A153C5700FD7F6C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 564C6BF82A153C5700FD7F6C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		564C6BFD2A153C5700FD7F6C /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 564C6BF82A153C5700FD7F6C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		564C6C002A15433700FD7F6C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 564C6BFF2A15433700FD7F6C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		564C6C022A15433700FD7F6C /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 564C6BFF2A15433700FD7F6C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		563AAB292A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld */ = {

@@ -26,6 +26,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = nav
         self.window = window
         self.window?.makeKeyAndVisible()
+        
+        /*
+        let userRequest = RegiserUserAPIRequest(
+            username: "BeFitFitness1",
+            email: "bfit1@BeFitFitness.com",
+            password: "bfit123456781"
+        )
+        
+        AuthService.shared.registerUser(with: userRequest) { wasRegistered, error in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            
+            print("Was Registration happend : ", wasRegistered)
+        }
+         */
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
