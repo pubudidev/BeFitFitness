@@ -29,6 +29,7 @@
 		564C6C062A154B5100FD7F6C /* AuthAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564C6C052A154B5100FD7F6C /* AuthAPIService.swift */; };
 		564C6C092A154C5000FD7F6C /* RegiserUserAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564C6C082A154C5000FD7F6C /* RegiserUserAPIRequest.swift */; };
 		564C6C0B2A15603700FD7F6C /* LoginUserAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564C6C0A2A15603700FD7F6C /* LoginUserAPIRequest.swift */; };
+		564C6C0D2A1562E400FD7F6C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564C6C0C2A1562E400FD7F6C /* Validator.swift */; };
 		56802BA72A0EA78D00B78D27 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BA62A0EA78D00B78D27 /* ForgotPasswordViewController.swift */; };
 		56802BA92A0EA7E500B78D27 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BA82A0EA7E500B78D27 /* HomeViewController.swift */; };
 		56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BAA2A0EA81700B78D27 /* LoginViewController.swift */; };
@@ -55,6 +56,7 @@
 		564C6C052A154B5100FD7F6C /* AuthAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIService.swift; sourceTree = "<group>"; };
 		564C6C082A154C5000FD7F6C /* RegiserUserAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiserUserAPIRequest.swift; sourceTree = "<group>"; };
 		564C6C0A2A15603700FD7F6C /* LoginUserAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserAPIRequest.swift; sourceTree = "<group>"; };
+		564C6C0C2A1562E400FD7F6C /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		56802BA62A0EA78D00B78D27 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		56802BA82A0EA7E500B78D27 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		56802BAA2A0EA81700B78D27 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				5641EB342A12A036002188AB /* AlertManager.swift */,
+				564C6C0C2A1562E400FD7F6C /* Validator.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				56445EC22A11497900FC63F4 /* PrimaryTextField.swift in Sources */,
 				563AAB212A0C11F1000C5E5D /* AppDelegate.swift in Sources */,
 				56445EC72A114FB900FC63F4 /* PrimaryButton.swift in Sources */,
+				564C6C0D2A1562E400FD7F6C /* Validator.swift in Sources */,
 				56445EC02A11359700FC63F4 /* AuthenticationHeaderView.swift in Sources */,
 				563AAB232A0C11F1000C5E5D /* SceneDelegate.swift in Sources */,
 				564C6C062A154B5100FD7F6C /* AuthAPIService.swift in Sources */,
