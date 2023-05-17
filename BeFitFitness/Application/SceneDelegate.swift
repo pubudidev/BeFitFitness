@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -13,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
+        /*
         guard let _ = (scene as? UIWindowScene) else { return }
         //set viewconttroller as initial loading controller
         guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -27,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
         self.window?.makeKeyAndVisible()
         
-        /*
+      
         let userRequest = RegiserUserAPIRequest(
             username: "BeFitFitness1",
             email: "bfit1@BeFitFitness.com",
@@ -43,7 +44,51 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             print("Was Registration happend : ", wasRegistered)
         }
          */
+        
+        self.setupWindow(with: scene)
+        self.checkAuthentication()
     }
+    
+    // Create seperate custom function to setup window scene
+    private func setupWindow(with scene: UIScene) {
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+                let window = UIWindow(windowScene: windowScene)
+                self.window = window
+                self.window?.makeKeyAndVisible()
+
+    }
+    
+    public func checkAuthentication() {
+        // Checking for any user is aready logged in. if a user already logged in then firebase keep track of the logged in users status.
+        if Auth.auth().currentUser == nil {
+            self.goToController(with: LoginViewController())
+        } else {
+            self.goToController(with: HomeViewController())
+        }
+    }
+
+    // Animating for load Vies smoothly
+    private func goToController(with viewController: UIViewController) {
+        
+        // if we doin UI related stuff such as go back and forth in different UIs it is better to do it in main thread. so it keep handling all the UI related things. and this give us smooth UI loading and respondings
+        DispatchQueue.main.async { [weak self] in
+            // Load a black screen first and then show stuffs in the loaded UI
+            UIView.animate(withDuration: 0.25) {
+                self?.window?.layer.opacity = 0
+
+            } completion: { [weak self] _ in
+
+                let nav = UINavigationController(rootViewController: viewController)
+                nav.modalPresentationStyle = .fullScreen
+                self?.window?.rootViewController = nav
+
+                UIView.animate(withDuration: 0.25) { [weak self] in
+                    self?.window?.layer.opacity = 1
+                }
+            }
+        }
+    }
+    
     
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
