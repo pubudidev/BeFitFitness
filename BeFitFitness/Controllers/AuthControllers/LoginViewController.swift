@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     private let signInButton = PrimaryButton(title: "Sign In", hasBackground: true, fontSize: .big)
     private let newUserButton = PrimaryButton(title: "New user? Create Account", fontSize: .med)
     private let forgotPasswordButton = PrimaryButton(title: "Forgot Password?", fontSize: .small)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .systemBackground // colour will change based on light/dark mode
@@ -31,10 +32,31 @@ class LoginViewController: UIViewController {
     
     @objc func didTapSignIn(){
         print("DEBUG PRINT:", "didTapSignIn")
-        let vc = HomeViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        self.present(nav, animated: false, completion: nil)
+        let loginRequest = LoginUserAPIRequest(
+            email: self.emailField.text ?? "",
+            password: self.passwordField.text ?? ""
+        )
+        
+        if !Validator.isValidEmail(for: loginRequest.email) {
+            AlertManager.showInvalidEmailAlert(on: self)
+            return
+        }
+        
+        if !Validator.isPasswordValid(for: loginRequest.password) {
+            AlertManager.showInvalidPasswordAlert(on: self)
+            return
+        }
+        
+        AuthService.shared.signIn(with: loginRequest) { error in
+            if let error = error {
+                AlertManager.showSignInErrorAlert(on: self, with: error)
+                return
+            }
+            
+            if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
+                sceneDelegate.checkAuthentication()
+            }
+        }
     }
     
     @objc func didTapNewUser(){
