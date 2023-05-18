@@ -35,6 +35,10 @@
 		56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BAA2A0EA81700B78D27 /* LoginViewController.swift */; };
 		56802BAD2A0EA84E00B78D27 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BAC2A0EA84E00B78D27 /* RegisterViewController.swift */; };
 		56C446512A167A150059687F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446502A167A150059687F /* User.swift */; };
+		56C446542A167F400059687F /* BMICalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446532A167F400059687F /* BMICalculatorViewController.swift */; };
+		56C446562A167F7B0059687F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446552A167F7B0059687F /* ProfileViewController.swift */; };
+		56C4465A2A1680370059687F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446592A1680370059687F /* ScheduleViewController.swift */; };
+		56C4465C2A16807C0059687F /* TabMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4465B2A16807C0059687F /* TabMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,10 @@
 		56802BAA2A0EA81700B78D27 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		56802BAC2A0EA84E00B78D27 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		56C446502A167A150059687F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		56C446532A167F400059687F /* BMICalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorViewController.swift; sourceTree = "<group>"; };
+		56C446552A167F7B0059687F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		56C446592A1680370059687F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		56C4465B2A16807C0059687F /* TabMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,9 +198,11 @@
 		56802BA42A0EA40500B78D27 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				56C446522A167F0A0059687F /* TabControllers */,
 				56802BA52A0EA73000B78D27 /* AuthControllers */,
 				563AAB242A0C11F1000C5E5D /* ViewController.swift */,
 				5641EB312A1296BF002188AB /* WebViewerController.swift */,
+				56C4465B2A16807C0059687F /* TabMenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,11 +211,21 @@
 			isa = PBXGroup;
 			children = (
 				56802BA62A0EA78D00B78D27 /* ForgotPasswordViewController.swift */,
-				56802BA82A0EA7E500B78D27 /* HomeViewController.swift */,
 				56802BAA2A0EA81700B78D27 /* LoginViewController.swift */,
 				56802BAC2A0EA84E00B78D27 /* RegisterViewController.swift */,
 			);
 			path = AuthControllers;
+			sourceTree = "<group>";
+		};
+		56C446522A167F0A0059687F /* TabControllers */ = {
+			isa = PBXGroup;
+			children = (
+				56C446532A167F400059687F /* BMICalculatorViewController.swift */,
+				56C446552A167F7B0059687F /* ProfileViewController.swift */,
+				56802BA82A0EA7E500B78D27 /* HomeViewController.swift */,
+				56C446592A1680370059687F /* ScheduleViewController.swift */,
+			);
+			path = TabControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,16 +310,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5641EB302A12888C002188AB /* FontSize.swift in Sources */,
+				56C446542A167F400059687F /* BMICalculatorViewController.swift in Sources */,
 				56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */,
+				56C4465A2A1680370059687F /* ScheduleViewController.swift in Sources */,
 				5641EB352A12A036002188AB /* AlertManager.swift in Sources */,
 				564C6C0B2A15603700FD7F6C /* LoginUserAPIRequest.swift in Sources */,
 				564C6C092A154C5000FD7F6C /* RegiserUserAPIRequest.swift in Sources */,
+				56C446562A167F7B0059687F /* ProfileViewController.swift in Sources */,
 				5641EB322A1296BF002188AB /* WebViewerController.swift in Sources */,
 				563AAB252A0C11F1000C5E5D /* ViewController.swift in Sources */,
 				56802BA72A0EA78D00B78D27 /* ForgotPasswordViewController.swift in Sources */,
 				56C446512A167A150059687F /* User.swift in Sources */,
 				56802BAD2A0EA84E00B78D27 /* RegisterViewController.swift in Sources */,
 				56445EC22A11497900FC63F4 /* PrimaryTextField.swift in Sources */,
+				56C4465C2A16807C0059687F /* TabMenuViewController.swift in Sources */,
 				563AAB212A0C11F1000C5E5D /* AppDelegate.swift in Sources */,
 				56445EC72A114FB900FC63F4 /* PrimaryButton.swift in Sources */,
 				564C6C0D2A1562E400FD7F6C /* Validator.swift in Sources */,
