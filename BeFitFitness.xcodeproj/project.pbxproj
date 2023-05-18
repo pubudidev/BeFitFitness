@@ -46,6 +46,14 @@
 		56C446662A16920D0059687F /* Exersice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446652A16920D0059687F /* Exersice.swift */; };
 		56C446682A1696080059687F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446672A1696080059687F /* Extensions.swift */; };
 		56C4466A2A1697080059687F /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446692A1697080059687F /* TitleCollectionViewCell.swift */; };
+		56C4466C2A169E410059687F /* YoutubeSearchAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4466B2A169E410059687F /* YoutubeSearchAPIResponse.swift */; };
+		56C4466E2A169EB10059687F /* VideoElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4466D2A169EB10059687F /* VideoElement.swift */; };
+		56C446702A169F570059687F /* IdVideoElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4466F2A169F570059687F /* IdVideoElement.swift */; };
+		56C446732A16A0AE0059687F /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446722A16A0AE0059687F /* TitleViewModel.swift */; };
+		56C446752A16A1300059687F /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446742A16A1300059687F /* TitlePreviewViewModel.swift */; };
+		56C446792A16A2070059687F /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446782A16A2070059687F /* TitleTableViewCell.swift */; };
+		56C4467B2A16A8520059687F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4467A2A16A8520059687F /* Constants.swift */; };
+		56C4467D2A16A9B70059687F /* ExercisePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4467C2A16A9B70059687F /* ExercisePreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +93,14 @@
 		56C446652A16920D0059687F /* Exersice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exersice.swift; sourceTree = "<group>"; };
 		56C446672A1696080059687F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		56C446692A1697080059687F /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		56C4466B2A169E410059687F /* YoutubeSearchAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchAPIResponse.swift; sourceTree = "<group>"; };
+		56C4466D2A169EB10059687F /* VideoElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoElement.swift; sourceTree = "<group>"; };
+		56C4466F2A169F570059687F /* IdVideoElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdVideoElement.swift; sourceTree = "<group>"; };
+		56C446722A16A0AE0059687F /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
+		56C446742A16A1300059687F /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
+		56C446782A16A2070059687F /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		56C4467A2A16A8520059687F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		56C4467C2A16A9B70059687F /* ExercisePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisePreviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +138,7 @@
 		563AAB1F2A0C11F1000C5E5D /* BeFitFitness */ = {
 			isa = PBXGroup;
 			children = (
+				56C446712A16A0850059687F /* ViewModels */,
 				564C6C072A154C1C00FD7F6C /* Model */,
 				564C6C042A154B1900FD7F6C /* Services */,
 				5641EB332A129FEC002188AB /* Managers */,
@@ -157,6 +174,7 @@
 				56445EC62A114FB900FC63F4 /* PrimaryButton.swift */,
 				56C4465D2A168A220059687F /* ColletionTableViewCell.swift */,
 				56C446692A1697080059687F /* TitleCollectionViewCell.swift */,
+				56C446782A16A2070059687F /* TitleTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +206,10 @@
 				56C446502A167A150059687F /* User.swift */,
 				56C446632A1691CE0059687F /* TrendingExersiceRespons.swift */,
 				56C446652A16920D0059687F /* Exersice.swift */,
+				56C4466B2A169E410059687F /* YoutubeSearchAPIResponse.swift */,
+				56C4466D2A169EB10059687F /* VideoElement.swift */,
+				56C4466F2A169F570059687F /* IdVideoElement.swift */,
+				56C4467A2A16A8520059687F /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +246,7 @@
 				563AAB242A0C11F1000C5E5D /* ViewController.swift */,
 				5641EB312A1296BF002188AB /* WebViewerController.swift */,
 				56C4465B2A16807C0059687F /* TabMenuViewController.swift */,
+				56C4467C2A16A9B70059687F /* ExercisePreviewViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,6 +270,15 @@
 				56C446592A1680370059687F /* ScheduleViewController.swift */,
 			);
 			path = TabControllers;
+			sourceTree = "<group>";
+		};
+		56C446712A16A0850059687F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				56C446722A16A0AE0059687F /* TitleViewModel.swift */,
+				56C446742A16A1300059687F /* TitlePreviewViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,10 +363,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5641EB302A12888C002188AB /* FontSize.swift in Sources */,
+				56C4467B2A16A8520059687F /* Constants.swift in Sources */,
 				56C446542A167F400059687F /* BMICalculatorViewController.swift in Sources */,
 				56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */,
 				56C4465A2A1680370059687F /* ScheduleViewController.swift in Sources */,
+				56C446732A16A0AE0059687F /* TitleViewModel.swift in Sources */,
 				5641EB352A12A036002188AB /* AlertManager.swift in Sources */,
+				56C4466C2A169E410059687F /* YoutubeSearchAPIResponse.swift in Sources */,
 				56C446602A168E960059687F /* ExerciseAPICaller.swift in Sources */,
 				564C6C0B2A15603700FD7F6C /* LoginUserAPIRequest.swift in Sources */,
 				56C4465E2A168A220059687F /* ColletionTableViewCell.swift in Sources */,
@@ -346,20 +381,25 @@
 				56C446642A1691CE0059687F /* TrendingExersiceRespons.swift in Sources */,
 				56802BA72A0EA78D00B78D27 /* ForgotPasswordViewController.swift in Sources */,
 				56C446512A167A150059687F /* User.swift in Sources */,
+				56C446752A16A1300059687F /* TitlePreviewViewModel.swift in Sources */,
 				56802BAD2A0EA84E00B78D27 /* RegisterViewController.swift in Sources */,
 				56C446662A16920D0059687F /* Exersice.swift in Sources */,
 				56445EC22A11497900FC63F4 /* PrimaryTextField.swift in Sources */,
 				56C4465C2A16807C0059687F /* TabMenuViewController.swift in Sources */,
 				563AAB212A0C11F1000C5E5D /* AppDelegate.swift in Sources */,
 				56445EC72A114FB900FC63F4 /* PrimaryButton.swift in Sources */,
+				56C446702A169F570059687F /* IdVideoElement.swift in Sources */,
 				564C6C0D2A1562E400FD7F6C /* Validator.swift in Sources */,
 				56445EC02A11359700FC63F4 /* AuthenticationHeaderView.swift in Sources */,
 				563AAB232A0C11F1000C5E5D /* SceneDelegate.swift in Sources */,
 				56C446682A1696080059687F /* Extensions.swift in Sources */,
 				564C6C062A154B5100FD7F6C /* AuthAPIService.swift in Sources */,
 				563AAB2B2A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld in Sources */,
+				56C4467D2A16A9B70059687F /* ExercisePreviewViewController.swift in Sources */,
+				56C4466E2A169EB10059687F /* VideoElement.swift in Sources */,
 				56445EC52A114B0900FC63F4 /* CustomTextFieldType.swift in Sources */,
 				56C4466A2A1697080059687F /* TitleCollectionViewCell.swift in Sources */,
+				56C446792A16A2070059687F /* TitleTableViewCell.swift in Sources */,
 				56802BA92A0EA7E500B78D27 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

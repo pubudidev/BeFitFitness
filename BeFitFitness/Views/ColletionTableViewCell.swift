@@ -12,13 +12,14 @@ class ColletionTableViewCell: UITableViewCell {
     
     // to identify this UITableViewCell
     static let identifire = "ColletionViewTableViewCell"
+    private var exersices: [Exersice] = [Exersice]()
     
     private let collectionView: UICollectionView = {
         let layout  = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: 140, height: 200)
         let collectioView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectioView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectioView.register(TitleCollectionViewCell.self, forCellWithReuseIdentifier: TitleCollectionViewCell.identifier)
         return collectioView
     }()
     
@@ -47,6 +48,13 @@ class ColletionTableViewCell: UITableViewCell {
         collectionView.frame = contentView.bounds
     }
     
+    public func configure(with titles: [Exersice]) {
+        self.exersices = titles
+		
+        DispatchQueue.main.async { [weak self] in
+            self?.collectionView.reloadData()
+        }
+    }
     required init?(coder: NSCoder) {
         fatalError()
     }
