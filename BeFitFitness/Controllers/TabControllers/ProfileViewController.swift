@@ -11,6 +11,7 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.navigationController?.navigationBar.isHidden = true
 
     }
 }

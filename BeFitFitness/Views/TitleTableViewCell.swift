@@ -22,6 +22,7 @@ class TitleTableViewCell: UITableViewCell {
      private let titleLabel: UILabel = {
          let label = UILabel()
          label.translatesAutoresizingMaskIntoConstraints = false
+         label.numberOfLines = 0
          return label
      }()
 
@@ -30,7 +31,7 @@ class TitleTableViewCell: UITableViewCell {
          let image = UIImage(systemName: "play.circle", withConfiguration: UIImage.SymbolConfiguration(pointSize: 30))
          button.setImage(image, for: .normal)
          button.translatesAutoresizingMaskIntoConstraints = false
-         button.tintColor = .white
+         button.tintColor = .red
          return button
      }()
 
@@ -63,6 +64,7 @@ class TitleTableViewCell: UITableViewCell {
          let titleLabelConstraints = [
              titleLabel.leadingAnchor.constraint(equalTo: titlesPosterUIImageView.trailingAnchor, constant: 20),
              titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
          ]
 
          let playTitleButtonConstraints = [

@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     private var exercises: [Exersice] = [Exersice]()
     
     private let upcomingTable: UITableView = {
-        
         let table = UITableView()
         table.register(TitleTableViewCell.self, forCellReuseIdentifier: TitleTableViewCell.identifier)
         return table
@@ -21,24 +20,26 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "Upcoming"
+        
+        title = "Home"
         navigationController?.navigationBar.prefersLargeTitles = true
+        self.tabBarController?.navigationController?.navigationBar.isHidden = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         
         view.addSubview(upcomingTable)
         upcomingTable.delegate = self
         upcomingTable.dataSource = self
         
+        setupNavigationUI()
         fetchUpcoming()
     }
     
-    // setting this e an see the table with data.
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         upcomingTable.frame = view.bounds
     }
     
-    // get omly upcoming
+    
     private func fetchUpcoming() {
         // to avoid memory leak [weak self]
         ExerciseAPICaller.shared.getUpcomingExercises { [weak self] result in
@@ -56,6 +57,24 @@ class HomeViewController: UIViewController {
         }
     }
     
+    private func setupNavigationUI(){
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Signout", style: .plain, target: self, action: #selector(didTapLogout))
+    }
+    
+    @objc private func didTapLogout() {
+        
+        AuthService.shared.signOut { [weak self] error in
+            guard let self = self else { return }
+            if let error = error {
+                AlertManager.showLogoutError(on: self, with: error)
+                return
+            }
+            
+            if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
+                sceneDelegate.checkAuthentication()
+            }
+        }
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -64,15 +83,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return exercises.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.identifier, for: indexPath) as? TitleTableViewCell else {
             return UITableViewCell()
         }
         
         let exercise = exercises[indexPath.row]
-
+        
         cell.configure(with: TitleViewModel(titleName: (exercise.original_title ?? exercise.original_name) ?? "Unknown title name", posterURL: exercise.poster_path ?? ""))
         return cell
     }
@@ -96,7 +114,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let exercise = exercises[indexPath.row]
-
+        
         guard let exerciseName = exercise.original_title ?? exercise.original_name else {
             return
         }
@@ -106,7 +124,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             case .success(let videoElement):
                 DispatchQueue.main.async {
                     let vc = ExercisePreviewViewController()
-                    vc.configure(with: TitlePreviewViewModel(title: exerciseName , youtubeView: videoElement, titleOverview: exercise.overview ?? ""))
+                    vc.configure(with: TitlePreviewViewModel(title: exerciseName , youtubeView: videoElement, titleOverview: exercise.overview ?? ""), on: exercise, isFromHome: true)
                     self?.navigationController?.pushViewController(vc, animated: true)
                 }
                 

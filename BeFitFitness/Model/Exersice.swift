@@ -18,4 +18,5 @@ struct Exersice: Codable{
     var calories_count: Int?
     var reps_and_sets: String?
     var minute_average: String?
+    var video_URL: String?
 }

@@ -54,6 +54,8 @@
 		56C446792A16A2070059687F /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446782A16A2070059687F /* TitleTableViewCell.swift */; };
 		56C4467B2A16A8520059687F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4467A2A16A8520059687F /* Constants.swift */; };
 		56C4467D2A16A9B70059687F /* ExercisePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4467C2A16A9B70059687F /* ExercisePreviewViewController.swift */; };
+		56C446802A16B2AD0059687F /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4467F2A16B2AD0059687F /* DataPersistenceManager.swift */; };
+		56C446822A16B31C0059687F /* DatabasError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446812A16B31C0059687F /* DatabasError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +103,8 @@
 		56C446782A16A2070059687F /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		56C4467A2A16A8520059687F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		56C4467C2A16A9B70059687F /* ExercisePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisePreviewViewController.swift; sourceTree = "<group>"; };
+		56C4467F2A16B2AD0059687F /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
+		56C446812A16B31C0059687F /* DatabasError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabasError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 		563AAB1F2A0C11F1000C5E5D /* BeFitFitness */ = {
 			isa = PBXGroup;
 			children = (
+				56C4467E2A16B2870059687F /* Data Persistance */,
 				56C446712A16A0850059687F /* ViewModels */,
 				564C6C072A154C1C00FD7F6C /* Model */,
 				564C6C042A154B1900FD7F6C /* Services */,
@@ -185,6 +190,7 @@
 				56445EC42A114B0900FC63F4 /* CustomTextFieldType.swift */,
 				5641EB2F2A12888C002188AB /* FontSize.swift */,
 				56C446612A1691350059687F /* APIError.swift */,
+				56C446812A16B31C0059687F /* DatabasError.swift */,
 			);
 			path = Enumarators;
 			sourceTree = "<group>";
@@ -281,6 +287,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		56C4467E2A16B2870059687F /* Data Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				56C4467F2A16B2AD0059687F /* DataPersistenceManager.swift */,
+			);
+			path = "Data Persistance";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,6 +378,7 @@
 			files = (
 				5641EB302A12888C002188AB /* FontSize.swift in Sources */,
 				56C4467B2A16A8520059687F /* Constants.swift in Sources */,
+				56C446822A16B31C0059687F /* DatabasError.swift in Sources */,
 				56C446542A167F400059687F /* BMICalculatorViewController.swift in Sources */,
 				56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */,
 				56C4465A2A1680370059687F /* ScheduleViewController.swift in Sources */,
@@ -371,6 +386,7 @@
 				5641EB352A12A036002188AB /* AlertManager.swift in Sources */,
 				56C4466C2A169E410059687F /* YoutubeSearchAPIResponse.swift in Sources */,
 				56C446602A168E960059687F /* ExerciseAPICaller.swift in Sources */,
+				56C446802A16B2AD0059687F /* DataPersistenceManager.swift in Sources */,
 				564C6C0B2A15603700FD7F6C /* LoginUserAPIRequest.swift in Sources */,
 				56C4465E2A168A220059687F /* ColletionTableViewCell.swift in Sources */,
 				56C446622A1691350059687F /* APIError.swift in Sources */,
