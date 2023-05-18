@@ -34,6 +34,7 @@
 		56802BA92A0EA7E500B78D27 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BA82A0EA7E500B78D27 /* HomeViewController.swift */; };
 		56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BAA2A0EA81700B78D27 /* LoginViewController.swift */; };
 		56802BAD2A0EA84E00B78D27 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56802BAC2A0EA84E00B78D27 /* RegisterViewController.swift */; };
+		56C446512A167A150059687F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446502A167A150059687F /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		56802BA82A0EA7E500B78D27 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		56802BAA2A0EA81700B78D27 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		56802BAC2A0EA84E00B78D27 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		56C446502A167A150059687F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				564C6C082A154C5000FD7F6C /* RegiserUserAPIRequest.swift */,
 				564C6C0A2A15603700FD7F6C /* LoginUserAPIRequest.swift */,
+				56C446502A167A150059687F /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				5641EB322A1296BF002188AB /* WebViewerController.swift in Sources */,
 				563AAB252A0C11F1000C5E5D /* ViewController.swift in Sources */,
 				56802BA72A0EA78D00B78D27 /* ForgotPasswordViewController.swift in Sources */,
+				56C446512A167A150059687F /* User.swift in Sources */,
 				56802BAD2A0EA84E00B78D27 /* RegisterViewController.swift in Sources */,
 				56445EC22A11497900FC63F4 /* PrimaryTextField.swift in Sources */,
 				563AAB212A0C11F1000C5E5D /* AppDelegate.swift in Sources */,

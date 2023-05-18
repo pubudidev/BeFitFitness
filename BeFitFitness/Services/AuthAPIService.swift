@@ -81,15 +81,54 @@ class AuthService {
         }
     }
     
-
-    /// SignOut Method
-    /// - Parameter completion: Complet after singOut
+    
+    /// Signout function
+    /// - Parameter completion: Complete after singout
     public func signOut(completion: @escaping (Error?)->Void) {
         do {
             try Auth.auth().signOut()
             completion(nil)
         } catch let error {
             completion(error)
+        }
+    }
+    
+    
+    /// Forgot password reset function
+    /// - Parameters:
+    ///   - email: email adrress that used to sign in
+    ///   - completion: called after firbase opprtations done.
+    public func forgotPassword(with email: String, completion: @escaping (Error?) -> Void) {
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            completion(error)
+        }
+    }
+    
+    
+    /// Fetch looged in user details
+    /// - Parameter completion: called after firbase opprtations done.
+    public func fetchUser(completion: @escaping (User?, Error?) -> Void) {
+        guard let userUID = Auth.auth().currentUser?.uid else { return }
+        
+        let db = Firestore.firestore()
+        
+        // get user at from user collection using users id
+        db.collection("users")
+            .document(userUID)
+            .getDocument { snapshot, error in
+                if let error = error {
+                    completion(nil, error)
+                    return
+                }
+                
+                // snapshotData is a Dictionary
+                if let snapshot = snapshot,
+                   let snapshotData = snapshot.data(),
+                   let username = snapshotData["username"] as? String,
+                   let email = snapshotData["email"] as? String {
+                    let user = User(username: username, email: email, userUID: userUID)
+                    completion(user, nil)
+            }
         }
     }
 }
