@@ -39,6 +39,7 @@
 		56C446562A167F7B0059687F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446552A167F7B0059687F /* ProfileViewController.swift */; };
 		56C4465A2A1680370059687F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446592A1680370059687F /* ScheduleViewController.swift */; };
 		56C4465C2A16807C0059687F /* TabMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4465B2A16807C0059687F /* TabMenuViewController.swift */; };
+		56C4465E2A168A220059687F /* ColletionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4465D2A168A220059687F /* ColletionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		56C446552A167F7B0059687F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		56C446592A1680370059687F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		56C4465B2A16807C0059687F /* TabMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuViewController.swift; sourceTree = "<group>"; };
+		56C4465D2A168A220059687F /* ColletionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColletionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				56445EBF2A11359700FC63F4 /* AuthenticationHeaderView.swift */,
 				56445EC12A11497900FC63F4 /* PrimaryTextField.swift */,
 				56445EC62A114FB900FC63F4 /* PrimaryButton.swift */,
+				56C4465D2A168A220059687F /* ColletionTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				56C4465A2A1680370059687F /* ScheduleViewController.swift in Sources */,
 				5641EB352A12A036002188AB /* AlertManager.swift in Sources */,
 				564C6C0B2A15603700FD7F6C /* LoginUserAPIRequest.swift in Sources */,
+				56C4465E2A168A220059687F /* ColletionTableViewCell.swift in Sources */,
 				564C6C092A154C5000FD7F6C /* RegiserUserAPIRequest.swift in Sources */,
 				56C446562A167F7B0059687F /* ProfileViewController.swift in Sources */,
 				5641EB322A1296BF002188AB /* WebViewerController.swift in Sources */,
