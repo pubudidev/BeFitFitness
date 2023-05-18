@@ -40,6 +40,10 @@
 		56C4465A2A1680370059687F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446592A1680370059687F /* ScheduleViewController.swift */; };
 		56C4465C2A16807C0059687F /* TabMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4465B2A16807C0059687F /* TabMenuViewController.swift */; };
 		56C4465E2A168A220059687F /* ColletionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4465D2A168A220059687F /* ColletionTableViewCell.swift */; };
+		56C446602A168E960059687F /* ExerciseAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4465F2A168E960059687F /* ExerciseAPICaller.swift */; };
+		56C446622A1691350059687F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446612A1691350059687F /* APIError.swift */; };
+		56C446642A1691CE0059687F /* TrendingExersiceRespons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446632A1691CE0059687F /* TrendingExersiceRespons.swift */; };
+		56C446662A16920D0059687F /* Exersice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446652A16920D0059687F /* Exersice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +77,10 @@
 		56C446592A1680370059687F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		56C4465B2A16807C0059687F /* TabMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuViewController.swift; sourceTree = "<group>"; };
 		56C4465D2A168A220059687F /* ColletionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColletionTableViewCell.swift; sourceTree = "<group>"; };
+		56C4465F2A168E960059687F /* ExerciseAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseAPICaller.swift; sourceTree = "<group>"; };
+		56C446612A1691350059687F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		56C446632A1691CE0059687F /* TrendingExersiceRespons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingExersiceRespons.swift; sourceTree = "<group>"; };
+		56C446652A16920D0059687F /* Exersice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exersice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 			children = (
 				56445EC42A114B0900FC63F4 /* CustomTextFieldType.swift */,
 				5641EB2F2A12888C002188AB /* FontSize.swift */,
+				56C446612A1691350059687F /* APIError.swift */,
 			);
 			path = Enumarators;
 			sourceTree = "<group>";
@@ -160,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				564C6C052A154B5100FD7F6C /* AuthAPIService.swift */,
+				56C4465F2A168E960059687F /* ExerciseAPICaller.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -170,6 +180,8 @@
 				564C6C082A154C5000FD7F6C /* RegiserUserAPIRequest.swift */,
 				564C6C0A2A15603700FD7F6C /* LoginUserAPIRequest.swift */,
 				56C446502A167A150059687F /* User.swift */,
+				56C446632A1691CE0059687F /* TrendingExersiceRespons.swift */,
+				56C446652A16920D0059687F /* Exersice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,15 +329,19 @@
 				56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */,
 				56C4465A2A1680370059687F /* ScheduleViewController.swift in Sources */,
 				5641EB352A12A036002188AB /* AlertManager.swift in Sources */,
+				56C446602A168E960059687F /* ExerciseAPICaller.swift in Sources */,
 				564C6C0B2A15603700FD7F6C /* LoginUserAPIRequest.swift in Sources */,
 				56C4465E2A168A220059687F /* ColletionTableViewCell.swift in Sources */,
+				56C446622A1691350059687F /* APIError.swift in Sources */,
 				564C6C092A154C5000FD7F6C /* RegiserUserAPIRequest.swift in Sources */,
 				56C446562A167F7B0059687F /* ProfileViewController.swift in Sources */,
 				5641EB322A1296BF002188AB /* WebViewerController.swift in Sources */,
 				563AAB252A0C11F1000C5E5D /* ViewController.swift in Sources */,
+				56C446642A1691CE0059687F /* TrendingExersiceRespons.swift in Sources */,
 				56802BA72A0EA78D00B78D27 /* ForgotPasswordViewController.swift in Sources */,
 				56C446512A167A150059687F /* User.swift in Sources */,
 				56802BAD2A0EA84E00B78D27 /* RegisterViewController.swift in Sources */,
+				56C446662A16920D0059687F /* Exersice.swift in Sources */,
 				56445EC22A11497900FC63F4 /* PrimaryTextField.swift in Sources */,
 				56C4465C2A16807C0059687F /* TabMenuViewController.swift in Sources */,
 				563AAB212A0C11F1000C5E5D /* AppDelegate.swift in Sources */,
