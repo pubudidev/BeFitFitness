@@ -44,6 +44,8 @@
 		56C446622A1691350059687F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446612A1691350059687F /* APIError.swift */; };
 		56C446642A1691CE0059687F /* TrendingExersiceRespons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446632A1691CE0059687F /* TrendingExersiceRespons.swift */; };
 		56C446662A16920D0059687F /* Exersice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446652A16920D0059687F /* Exersice.swift */; };
+		56C446682A1696080059687F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446672A1696080059687F /* Extensions.swift */; };
+		56C4466A2A1697080059687F /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C446692A1697080059687F /* TitleCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +83,8 @@
 		56C446612A1691350059687F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		56C446632A1691CE0059687F /* TrendingExersiceRespons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingExersiceRespons.swift; sourceTree = "<group>"; };
 		56C446652A16920D0059687F /* Exersice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exersice.swift; sourceTree = "<group>"; };
+		56C446672A1696080059687F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		56C446692A1697080059687F /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 			children = (
 				5641EB342A12A036002188AB /* AlertManager.swift */,
 				564C6C0C2A1562E400FD7F6C /* Validator.swift */,
+				56C446672A1696080059687F /* Extensions.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 				56445EC12A11497900FC63F4 /* PrimaryTextField.swift */,
 				56445EC62A114FB900FC63F4 /* PrimaryButton.swift */,
 				56C4465D2A168A220059687F /* ColletionTableViewCell.swift */,
+				56C446692A1697080059687F /* TitleCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,9 +355,11 @@
 				564C6C0D2A1562E400FD7F6C /* Validator.swift in Sources */,
 				56445EC02A11359700FC63F4 /* AuthenticationHeaderView.swift in Sources */,
 				563AAB232A0C11F1000C5E5D /* SceneDelegate.swift in Sources */,
+				56C446682A1696080059687F /* Extensions.swift in Sources */,
 				564C6C062A154B5100FD7F6C /* AuthAPIService.swift in Sources */,
 				563AAB2B2A0C11F1000C5E5D /* BeFitFitness.xcdatamodeld in Sources */,
 				56445EC52A114B0900FC63F4 /* CustomTextFieldType.swift in Sources */,
+				56C4466A2A1697080059687F /* TitleCollectionViewCell.swift in Sources */,
 				56802BA92A0EA7E500B78D27 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
