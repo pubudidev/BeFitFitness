@@ -15,7 +15,7 @@ class ExercisePreviewViewController: UIViewController {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 22, weight: .bold)
+        label.font = .systemFont(ofSize: 16, weight: .bold)
         label.numberOfLines = 0
         label.text = "Harry potter"
         return label
@@ -23,7 +23,7 @@ class ExercisePreviewViewController: UIViewController {
     
     private let overviewLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 14, weight: .regular)
+        label.font = .systemFont(ofSize: 12, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0 // that means this can take multiple lines
         label.text = "Best exercises"
@@ -32,7 +32,7 @@ class ExercisePreviewViewController: UIViewController {
     
     private let duration: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16, weight: .regular)
+        label.font = .systemFont(ofSize: 14, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0 // that means this can take multiple lines
         label.text = "Best exercises"
@@ -41,7 +41,7 @@ class ExercisePreviewViewController: UIViewController {
     
     private let caloriCount: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16, weight: .regular)
+        label.font = .systemFont(ofSize: 14, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0 // that means this can take multiple lines
         label.text = "Best exercises"
