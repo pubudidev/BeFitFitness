@@ -36,6 +36,10 @@ class PrimaryTextField: UITextField {
             self.placeholder = "Password"
             self.textContentType = .oneTimeCode
             self.isSecureTextEntry = true
+        case .height:
+            self.placeholder = "Weight"
+        case .weight:
+            self.placeholder = "Height"
         }
     }
     

@@ -73,16 +73,23 @@ extension AlertManager {
 }
 
 extension AlertManager {
+    
+    public static func showInvalidEmailAlert(on vc: UIViewController) {
+        self.showBasicAlert(on: vc, title: "Invalid Email", message: "Please enter a valid email.")
+    }
+    
+    public static func showInvalidPasswordAlert(on vc: UIViewController) {
+        self.showBasicAlert(on: vc, title: "Invalid Password", message: "Please enter a valid password.")
+    }
+    
+    public static func showInvalidUsernameAlert(on vc: UIViewController) {
+        self.showBasicAlert(on: vc, title: "Invalid Username", message: "Please enter a valid username.")
+    }
+}
 
-     public static func showInvalidEmailAlert(on vc: UIViewController) {
-         self.showBasicAlert(on: vc, title: "Invalid Email", message: "Please enter a valid email.")
-     }
-
-     public static func showInvalidPasswordAlert(on vc: UIViewController) {
-         self.showBasicAlert(on: vc, title: "Invalid Password", message: "Please enter a valid password.")
-     }
-
-     public static func showInvalidUsernameAlert(on vc: UIViewController) {
-         self.showBasicAlert(on: vc, title: "Invalid Username", message: "Please enter a valid username.")
-     }
- }
+extension AlertManager {
+    
+    public static func showInvalideBMICalculationError(on vc: UIViewController) {
+        self.showBasicAlert(on: vc, title: "Values or one of the values you added is wrong. \n use numbers only", message: nil)
+    }
+}

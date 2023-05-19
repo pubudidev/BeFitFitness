@@ -11,4 +11,6 @@ enum CustomTextFieldType {
     case username
     case email
     case password
+    case weight
+    case height
 }
