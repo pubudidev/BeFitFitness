@@ -20,9 +20,9 @@ class TabMenuViewController: UITabBarController {
         let BMICalculatorController = UINavigationController(rootViewController: BMICalculatorViewController())
         let profileController = UINavigationController(rootViewController: ProfileViewController())
         
-        BMICalculatorController.isNavigationBarHidden = true
-        schedularController.isNavigationBarHidden = true
-        profileController.isNavigationBarHidden = true
+        //BMICalculatorController.isNavigationBarHidden = true
+        //schedularController.isNavigationBarHidden = true
+        //profileController.isNavigationBarHidden = true
         
         homeController.tabBarItem.image = UIImage(systemName: "house")
         schedularController.tabBarItem.image = UIImage(systemName: "calendar.circle")

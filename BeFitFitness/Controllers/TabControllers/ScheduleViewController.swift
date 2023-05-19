@@ -26,6 +26,8 @@ class ScheduleViewController: UIViewController {
         title = "Schedule"
         navigationController?.navigationBar.prefersLargeTitles = true
         self.tabBarController?.navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = false
+        navigationController?.navigationItem.largeTitleDisplayMode = .always
         
         view.addSubview(downloadedTable)
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -126,7 +128,7 @@ extension ScheduleViewController: UITableViewDelegate, UITableViewDataSource {
                 DispatchQueue.main.async {
                     var ex: Exersice?
                     let vc = ExercisePreviewViewController()
-                    vc.configure(with: TitlePreviewViewModel(title: titleName, youtubeView: videoElement, titleOverview: title.overview ?? ""), on: ex, isFromHome: false)
+                    vc.configure(with: TitlePreviewViewModel(title: titleName, youtubeView: videoElement, titleOverview: title.overview ?? "", duration: title.minute_average, caloriCount: Int(title.calories_count ?? 0)), on: ex, isFromHome: false)
                     self?.navigationController?.pushViewController(vc, animated: true)
                 }
                 

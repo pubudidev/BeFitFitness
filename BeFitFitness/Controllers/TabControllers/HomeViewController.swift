@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
         title = "Home"
         navigationController?.navigationBar.prefersLargeTitles = true
         self.tabBarController?.navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = false
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         
         view.addSubview(upcomingTable)
@@ -124,7 +125,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             case .success(let videoElement):
                 DispatchQueue.main.async {
                     let vc = ExercisePreviewViewController()
-                    vc.configure(with: TitlePreviewViewModel(title: exerciseName , youtubeView: videoElement, titleOverview: exercise.overview ?? ""), on: exercise, isFromHome: true)
+                    vc.configure(with: TitlePreviewViewModel(title: exerciseName , youtubeView: videoElement, titleOverview: exercise.overview ?? "", duration: exercise.minute_average, caloriCount: exercise.calories_count ?? 0), on: exercise, isFromHome: true)
                     self?.navigationController?.pushViewController(vc, animated: true)
                 }
                 

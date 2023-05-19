@@ -11,4 +11,6 @@ struct TitlePreviewViewModel {
     let title: String
     let youtubeView: VideoElement
     let titleOverview: String
+    let duration: String?
+    let caloriCount: Int?
 }

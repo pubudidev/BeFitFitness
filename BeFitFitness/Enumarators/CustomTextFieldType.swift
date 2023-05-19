@@ -13,4 +13,6 @@ enum CustomTextFieldType {
     case password
     case weight
     case height
+    case birthday
+    case fitnessGoal
 }

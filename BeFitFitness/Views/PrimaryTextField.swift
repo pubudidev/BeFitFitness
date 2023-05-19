@@ -37,9 +37,15 @@ class PrimaryTextField: UITextField {
             self.textContentType = .oneTimeCode
             self.isSecureTextEntry = true
         case .height:
-            self.placeholder = "Weight"
+            self.placeholder = "Height in Kg"
+            self.keyboardType = .decimalPad
         case .weight:
-            self.placeholder = "Height"
+            self.placeholder = "Weight in m"
+            self.keyboardType = .decimalPad
+        case .birthday:
+            self.placeholder = "Birthday"
+        case .fitnessGoal:
+            self.placeholder = "Fitness Goal"
         }
     }
     

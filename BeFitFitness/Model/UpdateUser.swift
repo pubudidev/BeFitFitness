@@ -1,16 +1,13 @@
 //
-//  User.swift
+//  UpdateUser.swift
 //  BeFitFitness
 //
-//  Created by Pubudidev on 5/18/23.
+//  Created by Pubudidev on 5/19/23.
 //
 
 import Foundation
 
-struct User {
-    let username: String
-    let email: String
-    let userUID: String
+struct UpdateUser {
     let weight: String
     let height: String
     let finessGoal: String

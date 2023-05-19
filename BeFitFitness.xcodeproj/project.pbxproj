@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5606E7A82A17CC8C00BC3050 /* UpdateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606E7A72A17CC8C00BC3050 /* UpdateUser.swift */; };
 		563AAB212A0C11F1000C5E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AAB202A0C11F1000C5E5D /* AppDelegate.swift */; };
 		563AAB232A0C11F1000C5E5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AAB222A0C11F1000C5E5D /* SceneDelegate.swift */; };
 		563AAB252A0C11F1000C5E5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AAB242A0C11F1000C5E5D /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5606E7A72A17CC8C00BC3050 /* UpdateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUser.swift; sourceTree = "<group>"; };
 		563AAB1D2A0C11F1000C5E5D /* BeFitFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeFitFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563AAB202A0C11F1000C5E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		563AAB222A0C11F1000C5E5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				56C4466D2A169EB10059687F /* VideoElement.swift */,
 				56C4466F2A169F570059687F /* IdVideoElement.swift */,
 				56C4467A2A16A8520059687F /* Constants.swift */,
+				5606E7A72A17CC8C00BC3050 /* UpdateUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				56802BAB2A0EA81700B78D27 /* LoginViewController.swift in Sources */,
 				56C4465A2A1680370059687F /* ScheduleViewController.swift in Sources */,
 				56C446732A16A0AE0059687F /* TitleViewModel.swift in Sources */,
+				5606E7A82A17CC8C00BC3050 /* UpdateUser.swift in Sources */,
 				5641EB352A12A036002188AB /* AlertManager.swift in Sources */,
 				56C4466C2A169E410059687F /* YoutubeSearchAPIResponse.swift in Sources */,
 				56C446602A168E960059687F /* ExerciseAPICaller.swift in Sources */,

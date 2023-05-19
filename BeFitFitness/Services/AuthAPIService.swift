@@ -123,12 +123,37 @@ class AuthService {
                 
                 // snapshotData is a Dictionary
                 if let snapshot = snapshot,
-                   let snapshotData = snapshot.data(),
-                   let username = snapshotData["username"] as? String,
-                   let email = snapshotData["email"] as? String {
-                    let user = User(username: username, email: email, userUID: userUID)
+                                  let snapshotData = snapshot.data(),
+                                  let username = snapshotData["username"] as? String,
+                   let email = snapshotData["email"] as? String,
+                    let weight = snapshotData["weight"] as? String,
+                    let height = snapshotData["height"] as? String,
+                    let finessGoal = snapshotData["finessGoal"] as? String,
+                    let birthday = snapshotData["birthday"] as? String{
+                     let user = User(username: username, email: email, userUID: userUID, weight: weight, height: height, finessGoal: finessGoal, birthday: birthday)
                     completion(user, nil)
             }
         }
     }
+    
+    public func updateUser(with updateUser: UpdateUser,completion: @escaping (Error?) -> Void){
+             guard let userUID = Auth.auth().currentUser?.uid else { return }
+
+             let data = ["height" : updateUser.height,
+                         "weight" : updateUser.weight,
+                         "finessGoal" : updateUser.finessGoal,
+                         "birthday" : updateUser.birthday]
+
+                Firestore.firestore().collection("users")
+                    .document(userUID)
+                    .updateData(data) { error in
+                     print("DEBUG: User data Update successfully \("")\n\n")
+                         if let error = error {
+                             completion(error)
+                             return
+                         } else {
+                             completion(nil)
+                         }
+                    }
+                }
 }
