@@ -34,7 +34,7 @@ class TabMenuViewController: UITabBarController {
         BMICalculatorController.title = "BMI\nCalculator"
         profileController.title = "Profile"
         
-        tabBar.tintColor = .label
+        tabBar.tintColor = .red
         setViewControllers([homeController, schedularController, BMICalculatorController, profileController], animated: true)
     }
 }

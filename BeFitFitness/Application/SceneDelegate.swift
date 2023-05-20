@@ -14,36 +14,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        /*
-        guard let _ = (scene as? UIWindowScene) else { return }
-        //set viewconttroller as initial loading controller
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        let window = UIWindow(windowScene: windowScene)
-        
-        // UINavigationController needed a UIVeiwController as a rootViewController to start with
-        let vc = LoginViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        window.rootViewController = nav
-        self.window = window
-        self.window?.makeKeyAndVisible()
-        
-      
-        let userRequest = RegiserUserAPIRequest(
-            username: "BeFitFitness1",
-            email: "bfit1@BeFitFitness.com",
-            password: "bfit123456781"
-        )
-        
-        AuthService.shared.registerUser(with: userRequest) { wasRegistered, error in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            
-            print("Was Registration happend : ", wasRegistered)
-        }
-         */
         
         self.setupWindow(with: scene)
         self.checkAuthentication()
